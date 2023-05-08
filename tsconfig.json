@@ -19,7 +19,11 @@
     "noImplicitThis": false,
     "strictNullChecks": false,
     "allowImportingTsExtensions": true,
-    "noEmit": true
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    }
   },
-  "include": ["src/**/*", "__tests__/**/*"]
+  "include": ["src/**/*", "test/**/*", "vitest.config.ts", "vite.config.ts"]
 }
