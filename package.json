@@ -30,7 +30,8 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "coverage": "vitest run --coverage",
-    "preview-coverage": "vite preview --outDir coverage"
+    "preview-coverage": "vite preview --outDir coverage",
+    "type-check": "tsc -p tsconfig.release.json"
   },
   "devDependencies": {
     "@types/node": "~18.16.5",
