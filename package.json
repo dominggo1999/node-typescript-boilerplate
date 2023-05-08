@@ -29,13 +29,13 @@
     "pre-commit": "npx lint-staged",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "preview-coverage": "vite preview --outDir coverage"
   },
   "devDependencies": {
     "@types/node": "~18.16.5",
     "@typescript-eslint/eslint-plugin": "~5.59",
     "@typescript-eslint/parser": "~5.59",
-    "@vitest/coverage-c8": "^0.31.0",
     "@vitest/ui": "^0.31.0",
     "eslint": "~8.38",
     "eslint-config-prettier": "~8.8",
