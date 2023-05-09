@@ -5,13 +5,13 @@
   "engines": {
     "node": ">= 18.16 <19"
   },
-  "main": "./dist/my-lib.umd.cjs",
-  "module": "./dist/my-lib.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.js",
-      "require": "./dist/my-lib.umd.cjs"
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
     }
   },
   "files": [
@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "dev": "vite-node --watch src/main.ts",
-    "start": "node dist/my-lib.js",
+    "start": "node dist/index.js",
     "clean": "rimraf coverage build tmp",
     "prebuild": "npm run lint",
     "build": "npm run clean && tsc -p tsconfig.release.json && vite build",
@@ -34,6 +34,7 @@
     "type-check": "tsc -p tsconfig.release.json"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.2",
     "@types/node": "~18.16.5",
     "@typescript-eslint/eslint-plugin": "~5.59",
     "@typescript-eslint/parser": "~5.59",
