@@ -14,9 +14,6 @@
       "require": "./dist/index.umd.cjs"
     }
   },
-  "bin": {
-    "gct": "./dist/index.js"
-  },
   "files": ["dist"],
   "scripts": {
     "dev": "vite-node --watch src/index.ts",
@@ -55,11 +52,6 @@
     "vite-plugin-dts": "^2.3.0",
     "vite-tsconfig-paths": "^4.2.0",
     "vitest": "^0.31.0"
-  },
-  "dependencies": {
-    "inquirer": "^9.2.2",
-    "nanospinner": "^1.1.0",
-    "simple-git": "^3.18.0"
   },
   "volta": {
     "node": "18.16.0"
